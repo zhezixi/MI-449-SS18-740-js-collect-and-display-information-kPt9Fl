@@ -12,15 +12,15 @@ var updateProfile = function () {
   var phoneNumber = phoneNumberinput.value
   var preview = document.getElementById('preview')
   var rawlive = document.getElementById('rawlive')
-  var uptext =
+  var updatetext =
     '<h1>Hi my name is ' + firstName + ' ' + lastName + '!</h1>' + '<p>' + description + '</p>' +
     '<p>' + '  If you\'re interested in a date, you can email me at' +
     '  <a href="mailto:' + email + '" target="_blank">' + email + '</a>' +
     '  or give me a call at' +
     '  <a href="tel:' + phoneNumber + '" target="_blank">' + phoneNumber + '</a>.' +
     '</p>'
-  preview.innerHTML = uptext
-  rawlive.textContent = uptext
+  preview.innerHTML = updatetext
+  rawlive.textContent = updatetext
 }
 
 firstNameinput.addEventListener('input', updateProfile)
